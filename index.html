@@ -26,15 +26,15 @@
     
 
       <label for="name">Name:</label>
-      <input type="text" id="name" size="22">
+      <input type="text" id="name" size="22" onchange="validateName()" placeholder="Firstname Lastname">
        
       <label for="phone">Phone Number</label>
-      <input type="number" id="phone" size="22"><br>  
+      <input type="text" id="phone" size="22" onchange="validateNum()"><br>  
       </div>
       <br>
       <div align="margin-left">
       <h2>Select a time</h2>
-      <input type="radio" id="first" name="firstSeating" value="5" checked>
+      <input type="radio" id="first" name="firstSeating" value="5" checked="checked">
       <label for="first">5:00</label><br>
       <input type="radio" id="second" name="secondSeating" value="6">
       <label for="second">6:00</label><br>
@@ -56,11 +56,5 @@
       <button onclick="submit()" id="submit">
         Submit</button>
       
-<script>
-  
-  function submit() {
-    window.alert("submit");
-  }
-  
-</script>
+<script src="script.js"></script>
   </body> </html>
