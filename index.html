@@ -39,26 +39,26 @@
       <br>
       <div align="margin-left">
       <h2>Select a time</h2>
-      <input type="radio" id="first" name="firstSeating" value="5" checked="checked">
+      <input class="radio" type="radio" id="first" name="seating" value="5:00" checked="checked">
       <label for="first">5:00</label><br>
-      <input type="radio" id="second" name="secondSeating" value="6">
+      <input class="radio" type="radio" id="second" name="seating" value="6:00">
       <label for="second">6:00</label><br>
-      <input type="radio" id="third" name="thirdSeating" value="7">
+      <input class="radio" type="radio" id="third" name="seating" value="7:00">
       <label for="third">7:00</label><br>
-      <input type="radio" id="fourth" name="fourthSeating" value="8">
+      <input class="radio" type="radio" id="fourth" name="seating" value="8:00">
       <label for="fourth">8:00</label><br>
       <br>
       <h2>What would you like to have with us?</h2>
-      <input type="checkbox" id="starters" name="starters" value="starters">
+      <input class="check" type="checkbox" id="starters" name="starters" value="Starters">
       <label for="starters">Starters</label><br>
-      <input type="checkbox" id="Main" name="Main" value="main">
+      <input class="check" type="checkbox" id="Main" name="Main" value="Main">
       <label for="Main">Main Course</label><br>
-      <input type="checkbox" id="dessert" name="dessert" value="dessert">
+      <input class="check" type="checkbox" id="dessert" name="dessert" value="Dessert">
       <label for="dessert">dessert</label><br>
-      <input type="checkbox" id="drinks" name="drinks" value="drinks">
+      <input class="check" type="checkbox" id="drinks" name="drinks" value="Drinks">
       <label for="drinks">Drinks</label><br>
       </div>
-      <button onclick="submit()" id="submit">
+      <button onclick="submitButton()" id="submit">
         Submit</button><p id="message"></p>
       
 <script src="script.js"></script>

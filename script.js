@@ -16,7 +16,6 @@ name0.addEventListener("blur",()=>{
 
     let res=validateName()
     checkValid()
-    console.log(res)
     if(res){
        removeError()
       name0.style.boxShadow="none"
@@ -115,4 +114,35 @@ function showError(msg){
 
 function removeError(){
     message.innerHTML=""
+}
+
+
+function submitButton(){
+    let username=name0.value
+    let phoneN=phone.value
+
+    let radio=Array.from(document.getElementsByClassName("radio"))
+
+    let time;
+    radio.forEach((element)=>{
+        if(element.checked){
+            time=element.value
+        }
+    })
+    let food=[]
+    let check=Array.from(document.getElementsByClassName("check"))
+    check.forEach((element)=>{
+        if(element.checked){
+            food.push(element.value)
+        }
+    })
+
+    let str=""
+    // console.log(food)
+    food.forEach((item)=>{
+        str+=item
+        str+=" "
+    })
+
+    message.innerHTML=`Reservation for ${username} Phone:(${phoneN}) at ${time}.Starters are:${str} `
 }
