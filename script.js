@@ -29,6 +29,9 @@ name0.addEventListener("blur",()=>{
       
     }    
 })
+
+
+
 phone.addEventListener("blur",()=>{
     if(phone.value==""){
         showError("Phone number cannot be empty")    
@@ -36,6 +39,15 @@ phone.addEventListener("blur",()=>{
   
         return
       }
+    let firstChar=phone.value.charAt(0)
+    let decide=/^\d{1}$/.test(firstChar)
+    if(!decide){
+        showError("Error:Phone number must start with a digit!!")
+       phone.style.boxShadow="2px 2px 2px red"
+       return
+    }
+    
+
    let res= validateNum()
     checkValid()
     if(res){
@@ -74,7 +86,7 @@ function validateName(){
 function validateNum(){
     let phone_=phone.value
     // let format=/^\(?\d{3}\)?\-?[a-z0-9A-Z]{3}\-?[a-z0-9A-Z]{4}?\n{0,2}$/
-    let format=/^\d{3}\-?[a-z0-9A-Z]{3}\n{0,2}$/
+    let format=/^\d{1}\-?[a-z0-9A-Z]{5}\n{0,2}$/
     result=format.test(phone_)
     return result
 
