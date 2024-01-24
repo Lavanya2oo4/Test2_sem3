@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html> <head>
+      <style>
+        table {
+          text-align:center;
+          margin-left: 10%;
+          margin-right: 50%;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                       'Lucida Grande', 'Lucida Sans Unicode',
+                        Geneva, Verdana, sans-serif;
+        }
+        input, button {
+          padding: 12px 20px;           margin: 8px 0;
+          display: inline-block;        border: 1px solid #ccc;
+          border-radius: 4px;           box-sizing: border-box;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular',
+                       'Lucida Grande', 'Lucida Sans Unicode',
+                        Geneva, Verdana, sans-serif;
+          align: center;
+         }
+      </style>
+   </head>
+   <body>
+      <div align="center">
+      <h1>Booking your place for your dinner!</h1>  
+    
+
+      <label for="name">Name:</label>
+      <input type="text" id="name" size="22">
+       
+      <label for="phone">Phone Number</label>
+      <input type="number" id="phone" size="22"><br>  
+      </div>
+      <br>
+      <div align="margin-left">
+      <h2>Select a time</h2>
+      <input type="radio" id="first" name="firstSeating" value="5" checked>
+      <label for="first">5:00</label><br>
+      <input type="radio" id="second" name="secondSeating" value="6">
+      <label for="second">6:00</label><br>
+      <input type="radio" id="third" name="thirdSeating" value="7">
+      <label for="third">7:00</label><br>
+      <input type="radio" id="fourth" name="fourthSeating" value="8">
+      <label for="fourth">8:00</label><br>
+      <br>
+      <h2>What would you like to have with us?</h2>
+      <input type="checkbox" id="starters" name="starters" value="starters">
+      <label for="starters">Starters</label><br>
+      <input type="checkbox" id="Main" name="Main" value="main">
+      <label for="Main">Main Course</label><br>
+      <input type="checkbox" id="dessert" name="dessert" value="dessert">
+      <label for="dessert">dessert</label><br>
+      <input type="checkbox" id="drinks" name="drinks" value="drinks">
+      <label for="drinks">Drinks</label><br>
+      </div>
+      <button onclick="submit()" id="submit">
+        Submit</button>
+      
+<script>
+  
+  function submit() {
+    window.alert("submit");
+  }
+  
+</script>
+  </body> </html>
