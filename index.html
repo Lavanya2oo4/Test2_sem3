@@ -18,6 +18,11 @@
                         Geneva, Verdana, sans-serif;
           align: center;
          }
+         #message{
+          display: inline;
+          margin: 0vh 1vh;
+          color:rgb(70, 70, 211);
+         }
       </style>
    </head>
    <body>
@@ -26,10 +31,10 @@
     
 
       <label for="name">Name:</label>
-      <input type="text" id="name" size="22" onchange="validateName()" placeholder="Firstname Lastname">
+      <input type="text" id="name" size="22" placeholder="Firstname Lastname">
        
       <label for="phone">Phone Number</label>
-      <input type="text" id="phone" size="22" onchange="validateNum()"><br>  
+      <input type="text" id="phone" size="22"><br>  
       </div>
       <br>
       <div align="margin-left">
@@ -54,7 +59,7 @@
       <label for="drinks">Drinks</label><br>
       </div>
       <button onclick="submit()" id="submit">
-        Submit</button>
+        Submit</button><p id="message"></p>
       
 <script src="script.js"></script>
   </body> </html>
